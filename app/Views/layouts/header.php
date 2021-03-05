@@ -61,7 +61,7 @@
                                     <img class="mr-3 rounded" width="30"
                                         src="<?= base_url() ?>/template/assets/img/products/product-3-50.png"
                                         alt="product">
-                                    oPhone S9 Limited Edition
+                                    aoPhone S9 Limited Edition
                                 </a>
                             </div>
                             <div class="search-item">
