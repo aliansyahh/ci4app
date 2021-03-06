@@ -8,6 +8,7 @@
         </div>
 
         <div class="section-body">
+            <h1>Selamat Datang</h1>
         </div>
     </section>
 </div>

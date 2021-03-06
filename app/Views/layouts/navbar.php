@@ -13,10 +13,10 @@
                         class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Starter</li>
-            <li class=""><a class="nav-link" href="blank.html"><i class="far fa-square"></i>
-                    <span>Blank Page</span></a></li>
+            <li class=""><a class="nav-link" href="<?= base_url('/Komik'); ?>"><i class="far fa-square"></i>
+                    <span>Halaman Komik</span></a></li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
+                <a href="" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                     <span>Bootstrap</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
