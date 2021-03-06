@@ -8,18 +8,19 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="nav-item dropdown">
-                <a href="<?= base_url('/Home'); ?>" class="nav-link"><i
+            <li class="nav-item dropdown <?= ($title == 'Dashboard') ? 'active' : ''; ?>">
+                <a href="<?= base_url('/Home'); ?>" class="nav-link "><i
                         class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Starter</li>
-            <li class=""><a class="nav-link" href="<?= base_url('/Komik'); ?>"><i class="far fa-square"></i>
+            <li class="<?= ($title == 'Halaman Komik') ? 'active' : ''; ?>"><a class="nav-link "
+                    href="<?= base_url('/Komik'); ?>"><i class="far fa-square"></i>
                     <span>Halaman Komik</span></a></li>
             <li class="nav-item dropdown">
                 <a href="" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                     <span>Bootstrap</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
+                    <li class=""><a class="nav-link" href="<?= base_url('/Komik'); ?>">Alert</a></li>
                     <li><a class="nav-link" href="bootstrap-badge.html">Badge</a></li>
                     <li><a class="nav-link" href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
                     <li><a class="nav-link" href="bootstrap-buttons.html">Buttons</a></li>

@@ -17,9 +17,20 @@ class Komik extends BaseController
     {
         $data = [
             'title' => 'Halaman Komik',
-            'komik' => $this->dataKomik->findAll(),
+            'komik' => $this->dataKomik->getDataKomik(),
             'judul' => 'komik'
         ];
         return view('komik/index', $data);
+    }
+
+    public function detail($slug)
+    {
+        $data = [
+            'title' => 'Detail Komik',
+            'komik' => $this->dataKomik->getDataKomik($slug),
+            'judul' => 'komik'
+        ];
+
+        return view('komik/detail', $data);
     }
 }

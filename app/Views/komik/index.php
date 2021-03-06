@@ -20,10 +20,10 @@
                 <div class="col-12 col-md-12 col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Hover</h4>
+                            <a href="" class="btn btn-primary btn-sm">Tambah Data</a>
                         </div>
                         <div class="card-body">
-                            <table class="table table-hover table-bordered">
+                            <table class="table table-hover table-bordered text-center">
                                 <thead>
                                     <tr>
                                         <th scope="col">No</th>
@@ -37,7 +37,8 @@
                                     <?php foreach ($komik as $k) : ?>
                                     <tr>
                                         <th scope="row"><?= $no++; ?></th>
-                                        <td><?= $k['sampul']; ?></td>
+                                        <td><img class="m-2" src="img/<?= $k['sampul']; ?>" alt="" width="60">
+                                        </td>
                                         <td><?= $k['judul']; ?></td>
                                         <td>
                                             <a href="<?= base_url('/komik') ?>/<?= $k['slug']; ?>"
