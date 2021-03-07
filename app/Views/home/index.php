@@ -19,7 +19,7 @@
                                 <h4>Total Komik</h4>
                             </div>
                             <div class="card-body">
-                                <?= $komik; ?>
+                                <?= $jkomik; ?>
                             </div>
                         </div>
                     </div>

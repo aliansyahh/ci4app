@@ -7,6 +7,7 @@ use CodeIgniter\Model;
 class KomikModel extends Model
 {
     protected $table      = 'komik';
+    protected $allowedFields = ['judul', 'slug', 'penulis', 'penerbit'];
 
     protected $useTimestamps = true;
 

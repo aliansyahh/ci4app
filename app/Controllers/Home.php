@@ -18,7 +18,7 @@ class Home extends BaseController
 		$data = [
 			'title' => 'Dashboard',
 			'judulHalaman' => 'Halaman Dashboard',
-			'komik' => $this->dataKomik->getJumlah()
+			'jkomik' => $this->dataKomik->getJumlah()
 		];
 
 		// return view('welcome_message');

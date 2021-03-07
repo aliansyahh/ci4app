@@ -11,6 +11,12 @@
             </div>
         </div>
 
+        <?php if (session()->getFlashdata('pesan')) : ?>
+        <div class="alert alert-success" role="alert">
+            <?= session()->getFlashdata('pesan'); ?>
+        </div>
+        <?php endif; ?>
+
         <div class="section-body">
             <!-- <h2 class="section-title">Tables</h2>
             <p class="section-lead">
@@ -20,7 +26,8 @@
                 <div class="col-12 col-md-12 col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <a href="" class="btn btn-primary btn-sm">Tambah Data</a>
+
+                            <a href="<?= base_url('/komik/create'); ?>" class="btn btn-primary btn-sm">Tambah Data</a>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover table-bordered text-center">
